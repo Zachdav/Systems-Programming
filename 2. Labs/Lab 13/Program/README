@@ -1,0 +1,49 @@
+################################################################################
+# Lab 13
+# Courtesy of Supa' Mike from https://gist.github.com/mepcotterell/3ce865e3a151a3b49ec3
+
+Zachary Davis (810-960-668)
+
+## Instructions
+
+To clean my code (i.e., remove any compiled files), type:
+
+```
+$ make clean
+```
+
+To compile my code, type:
+
+```
+$ make
+```
+
+To run my code (after compiling it), type:
+
+```
+$ ./lab13
+```
+
+## Reflection
+
+	This was not quite as difficult as I had led myself to believe in my 
+breakout but certainly still very difficult as an overall lab.  The good news is
+this is most of the project completed.
+	The first thing i did was fix the prompt to display as the example from 
+the project instructions sheet be indentifying the home directory and replacing 
+it with a ~ unless you are above the default home directory.
+	Second I added and refined the three required options exit, cd, and help.
+By lab 12 I had default exit already implemented all i needed to do was to add 
+the users ability to pass in their own integer N to represent the exit status.
+For cd I used my old code from project two as a reference since it needed to be
+implemented on a low level and for help i used a combination of GNU's help and 
+the project instruction sheet.
+	Dealing with the signals was as easy as SIG_IGN to the specified signals 
+in the parent and SIG_DFL in the child processes.
+	The most difficult portion of this project was dealing with piping and 
+forking of course.  For no pipes it was fairly simple in that it was just once 
+job and one fork.  With pipes however it got much harder. The main idea that i 
+implemented was just to loop through the command provided and parse them into 
+separate jobs and then parse each job as if there were no pipes since i dealt 
+with read and write ends of pipes early on.
+################################################################################

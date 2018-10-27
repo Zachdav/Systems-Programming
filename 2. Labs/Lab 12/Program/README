@@ -1,0 +1,47 @@
+################################################################################
+# Lab 01
+# Courtesy of Supa' Mike from https://gist.github.com/mepcotterell/3ce865e3a151a3b49ec3
+
+Zachary Davis (810-960-668)
+
+## Instructions
+
+To clean my code (i.e., remove any compiled files), type:
+
+```
+$ make clean
+```
+
+To compile my code, type:
+
+```
+$ make
+```
+
+To run my code (after compiling it), type:
+
+```
+$ ./lab12
+```
+
+## Reflection
+
+	This program is not much harder than i predicted in the breakout.  The 
+two parts that i did not anticipate being as difficult as they were was the 
+excessive spaces and the string with and without quotes within itself.  The rest
+of the program from the STDIN, STDOUT, STDERR, pipes, processes, and arguments
+themselves divided into their respective processes went exactly as i had 
+described in the breakout brainstorm.
+	To handle the problem where there was more than one space in between 
+actual arguments i created and if statement that compares the substring right
+after the first space delimiter.  If that was a space then it will delete it and
+continue.  That will keep being called and deleting spaces until the next char 
+in the command is no a whitespace.
+	The behemoth of pulling in a string as one argument was a nightmare.  
+Finally after a lot of thought i deicded to make a loop that goes through the
+whole command and replaces any \" with ** assuming that they are always with in
+a pair of quotations.  Then i look for a " and make sure that there is another
+one so that there is always a pair.  I take the substring between these to point
+-s and re-replace the ** with ".  This will give the original string the user
+intended to pass in.
+################################################################################

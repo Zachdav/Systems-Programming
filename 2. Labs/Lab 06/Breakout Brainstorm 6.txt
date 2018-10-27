@@ -1,0 +1,24 @@
+Zachary Davis, Jack Peeples, James Roach
+
+Breakout Brainstorm 09-30-15
+
+	For this lab there are there major parts dealing with command line arguments, low
+level file I/O, and the use of ncurses.
+
+	For the command line arguments problem I will write the main to accept up to two 
+arguments and if the user includes the last argument or the file they wish to open i will
+resume code as normal.  If however, they do not include the second argument i.e. if argc2 ==
+null then i will prompt the user at that point as to what file they want to open.  From that
+point the code will pick up as if they entered it as an argument and move on.
+
+	For the opening of file I/O in this particular problem we need to consult the use of
+ncurses.  For the reading in of the low-level file I/O itself i will construct a program
+similar to that of the one that supa’ mike constructed in class this week. The key 
+differences however come in when we begin to print the result to the screen.  We will have 
+to start by using initscr(); which will start up ncurses.  Then use printw(——); to print
+the contents of the file.  Obviously before this line I will need to actually read in 
+content.  Then after i have “printed” it all i will call refresh(); which will literally 
+print out the contents to the screen for the user to see the file they requested.  Then I 
+will use getch(); to wait for the users input to say that they are done reading the file and
+want to go back into nike.  When i get that input i will finally call endwin(); to end 
+curses.

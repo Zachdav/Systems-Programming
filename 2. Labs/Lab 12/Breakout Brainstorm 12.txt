@@ -1,0 +1,10 @@
+Zachary Davis 811960668, Drew Peldger, James Roach, Jack Peeples
+
+Breakout Brainstorm 10-21-15
+
+	For this breakout most of it will be parsing the command line arguments for most of the lab.
+In our own pseudo “bash” we will be getLine and parse the line looking for one of the seven options
+listed in the instructions sheet.  There will also for error purposes I will have a final else 
+statement that says you have not used this program correct try again.  Other than that there will be 
+a tiny bit of logic to deal with piping.  I will assume that the input won’t be correct other than that 
+there will always be spaces between arguments.

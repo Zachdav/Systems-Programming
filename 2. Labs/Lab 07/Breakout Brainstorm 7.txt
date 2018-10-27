@@ -1,0 +1,17 @@
+Zachary Davis, Jack Peeples, Drew Pledger
+
+Breakout Brainstorm 10-07-15
+
+	This week I have had two tests already and two tomorrow including yours so 
+unfortunately I have not had a chance to begin the project yet but i have looked at the
+instruction sheet and do have a plan.  
+	For the function display and user interface portion of the project i will be using 
+the ncurses library and its methods to produce a text editor capable of immediate editing.  
+I will use ncurses to provide a file drop down menu that will allow the user to see, save as, 
+and open.  Those are all the necessary user interface part of the project
+
+	The other part of the project is to actually allow the user to save and open what 
+they actually have typed in the text editor.  For this i will have the text editor create a
+workspace directory and have all of the files saved there unless the user uses save as. In 
+that case i will have the file saved where they dictate. To actually complete the save and
+open procedures I will use the same low level i/o type coding as i did in the lab06.

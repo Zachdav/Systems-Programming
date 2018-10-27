@@ -1,0 +1,40 @@
+Zachary Davis, James Roach, Jack Peeples, Drew Pedger
+
+Breakout Two 2015-09-02
+
+stat.cpp
+	
+	Create an input stream to pull in the users integers delimited by a space and add
+	them to a variable total as well as square it and add it to a variable
+	squaredTotal.  Print the variable total to the user, to print the average print
+	the sum divided by n (a counter incrementing for every new number), and print 
+	squared total.  To present the variance we only need the 3 stats we already printed
+	and stored.
+
+minmax.cpp
+
+	Store the users first entry in both a min and max variable.  After that create a for
+	loop that cin’s a next int and compares it to both variables.  If it is smaller than
+	the current min or bigger than the current max induce a swap.  After iterating 
+	through all of the users ints print the two variables min and max.
+
+degrees.cpp
+
+	Retrieve the users integer value that represents a temperature in degrees celsius
+	and store it into a variable.  Multiply the variable by 9/5 the conversion ratio 
+	and re-store it back into the variable.  Create a loop to truncate all digits beyond
+	the hundredths place and print the result to the user.
+
+time.cpp
+
+	Simply use a loop that will divides the seconds first storing the remainder in a
+	variable for seconds.  Continue this process for minutes, hours, and finally days
+	storing the remainders in there own respective variables.  After that loop is 
+	complete in descending order print the variables to the user.
+
+endtime.cpp
+
+	Accept 2 variables from the user the first being the current time in 24 clock format
+	the second being the time that has passed.  Use division and modulo to modify the 
+	second number so that after 60 it i will add one to the hundreds place or the hour.
+	Finally print the start time change in time and the end time to the user.

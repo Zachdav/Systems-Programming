@@ -1,0 +1,66 @@
+######################################################################
+# Lab 06 Courtesy of Supa` Mike from 
+# https://gist.github.com/mepcotterell/3ce865e3a151a3b49ec3
+
+Zachary Davis (811-960-668)
+
+## Instructions
+
+To clean my code (i.e., remove any compiled files), type:
+
+```
+$ make clean
+```
+
+To compile only one of the files type:
+
+```
+$ make <file_name>
+```
+
+To compile my both programs, type:
+
+```
+$ make
+```
+
+To run my code (after compiling it), type:
+
+```
+$ ./lab06 <with or without a filename>
+```
+
+or
+
+```
+$ ./lab06test
+```
+
+## Reflection
+
+	In my breakout brainstorm the main idea and layout of the program was correct
+	but the specifics needed a lot of help.  For example in my breakout i did 
+	realize that the lab had three main ways that it could run.  One is too many 
+	arguments, two is that there was exactly two arguments, and lastly one means 
+	not enough and we need a file name.  This was the overall layout of my main 
+	function.  I had three if statements that handled each of these three cases 
+	proparly and ending the program at the end of each if statement because they 
+	will not need the other two.  Within each statement i either told the user to 
+	use less arugments, opened the file in their argumentor asked them to provide 
+	a file.  This two i understood in my brainstorm.  The key difference in my 
+	actual lab design and my brainstorm is making open, read, and close functions 
+	to make the code more readable.  Within each function i do the three main 
+	things i mention in my brainstorm if the user provide a filename.  First in 
+	the open function check for any opening errors and if there are any display 
+	them to the user through the ncurses screen.  If however there are no errors 
+	the program will continue on with the read function.  Again in my brainstorm 
+	i basically describe exactly what my read does correctly using a char[] to 
+	hole the values of the file.  Lastly the close function was not meantioned in 
+	my brainstorm and needed to be because you need to check for any errors when 
+	closing the file which is exactly what i do in the lab.  
+
+	Over all the basics of my brainstorm was correct if you forget that i did not 
+	include checking for closing errors.  However, the lab itself was much more 
+	complicated because i needed to split up the three main functions of the 
+	program into functions which i did not touch on in my brainstorm.
+######################################################################

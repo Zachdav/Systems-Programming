@@ -1,0 +1,11 @@
+Zachary Davis, James Roach, Jack Peeples, Will Young, Hoonjae Won, Joseph Rapach
+
+Breakout One 2015-08-26
+
+The problem is to store multiple values into one integer variable that contains 32 bits, where the user can choose how many different values to store (1-32) and what each value actually is.
+
+For the setValue function a reference to the variable, number of values or k, index to work with, and the value to assign it are needed.  The firs thing you do each time is set every digit in the index passed in to zeros.  From there the function will use a loop to change to value into a base two or binary form.  After that use k to find how many digits are with in each index.  Use the index given to figure out how many indices precede the one you want to change and use that and k to figure out the power of 10 needed to skip over them.  For example (0000) (0010) has a k or 2 with for digits in each, to set index 1 you need to add one index to the binary value passed in or 4 zeros so that the passed in value in binary (1111) changes to (11110000). Finally add that new number to the original variable to get (1111) (0010).
+
+For the getValue function a reference variable, index are passed in to retrieve that value.  The first thing you do is remove all indices to the right of your index by subtracting any none zeros and than dividing by the the power of 10 with as many zeros as digits to the right.  Then to get rid of the indices to the left modulo the number by the numbers in the left most index followed by all zeros until there are none left.  Lastly write a for loop to convert the binary back to base ten and return the value.
+
+The main function is very simple prompt the user to input the proper information and call the previous functions to set their values or return ones they need.

@@ -1,0 +1,66 @@
+######################################################################
+# Lab 06 Courtesy of Supa` Mike from 
+# https://gist.github.com/mepcotterell/3ce865e3a151a3b49ec3
+
+Zachary Davis (811-960-668)
+
+## Instructions
+
+To clean my code (i.e., remove any compiled files), type:
+
+```
+$ make clean
+```
+
+
+To compile my program, type:
+
+```
+$ make
+```
+
+To run my code (after compiling it), type:
+
+```
+$ ./chmod -sym MODE[,MODE]... FILE
+```
+
+or
+
+```
+$ ./chmod -oct OCTAL-MODE FILE
+```
+
+## Reflection
+
+	This lab had three main parts within that mainly needed to be 
+dealt with.  The first being basic error handling. The second being
+changing the appropriate files permissions as the user running the 
+utility has requested if possible with octal.  The third and final is 
+the same as above but you are required to do it with symbols.
+
+	To deal with basic error handling we need to first check that 
+the user has entered the appropriate number of arguments, which is always
+3 additional arguments.  If there are more or less arguments i notified
+the user and exited with failure which is exactly what i predicted 
+in my breakout.  In my breakout i also was correct when i said we needed
+to check that the current user has permissions that the file exists and
+that the remaining arguments match the -oct or -sym argument.  What I was
+unprepared for and forgot in my breakout was checking that the user has
+entered -oct or -sym and not some thing else.
+
+	In my breakout i claimed that when the user passes in the octal 
+permissions that they want to change the file to I could just store that
+and the filename in const char* and pass them into the chmod().  However
+after using my brain and documentation i realized that it was a little more
+complex than that and that i needed a switch statements and consts like
+S_IRWXU to set the permissions and after reading in all 3 numbers combining
+them and passing that integer into the chmod();
+
+	For the symbols in my breakout i stated that i would need a 
+switch statement in a while loop that deals with each char in the 2nd
+argument and this is exactly correct.  Having every possible char case
+i used ints to detect whether the user has included that in their argument
+and the same consts from earlier with logic to set the permissions.
+
+######################################################################

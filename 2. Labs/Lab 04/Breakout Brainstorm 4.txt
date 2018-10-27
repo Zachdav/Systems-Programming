@@ -1,0 +1,43 @@
+Zachary Davis, Steve Dixon, Spencer Hardy, Jackson --
+
+Breakout Four 09-16-15
+
+To complete the Matrix(uint rows, uint cols); you will need to create a function that accepts 2 non-negative
+integers and create a two-dimensional array that has the equivalent number of rows and columns.  After
+declaring the array itself the function also needs to use a for loop to initialize each value to zero.  
+
+To complete the copy constructor Matrix(const Matrix & m); function, we simply need one for loop that 
+iterates through the starting array and copying each integer value you to the ending array individually.
+
+To complete the destructor ~Matrix(); function, we simply need to deallocate the space previously allocated
+for that array from memory to avoid memory leaks.
+
+To complete the Matrix add(double s_); and Matrix subtract(double s) functions, just make a for loop that
+iterates through every value in the array, adding/subtracting the passed in scalar each time.
+
+To complete the Matrix add(const Matrix & m); and Matrix subtract(const Matrix & m); functions, first we 
+need to verify that the starting matrix has the same number of columns as the ending matrix has rows.  
+If it does not alert the user that the two entered matrices cannot be added. If they do match we need to
+create a for loop that follows the addition/subtraction rules for matrices and return the new combined 
+array.
+
+To complete the Matrix multiply(double s); and Matrix divide(double s); functions, we need to make a for
+loop that iterates through each term in the array, multiplying/dividing by the passed in scalar each time.
+
+To complete the Matrix multiply(const Matrix & m); function, first we need to verify that the starting 
+matrix has the same number of columns as the ending matrix has rows.  If it does not alert the user that 
+the two entered matrices cannot be added. If they do match we need to create a for loop that follows the 
+multiplying rules for matrices and return the new combined array.
+
+To complete the Matrix t() const; function, we will need to create a temporary array with as many columns 
+as the passed ins rows and rows as the passed ins columns.  Finally create a for loop that iterates through
+the starting arrays values and copy them into the ending arrays columns first then rows.
+
+To complete the const uint numRows() const; and const uint numCols() const; functions, we need to create two
+functions that create a for loop that iterates through the array while using a counter to keep track of the
+number of rows/columns.  Once terminated the resulting number needs to be returned.
+
+To complete the double & at(uint row, uint col); and const double & at (uint row, uint col) const; functions
+we need to pass in the number of rows and and columns the user wants to alter like the integers address.  
+Once that is done if the user wants to get the value return the value at that address and if they want to set
+the value at that address create a line to do that.  

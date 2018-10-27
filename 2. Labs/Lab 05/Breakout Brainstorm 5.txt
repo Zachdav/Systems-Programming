@@ -1,0 +1,21 @@
+Zachary Davis, Jack Peeples, Jackson Wright
+
+Breakout Five 09-23-15
+
+	To create the call operator function pass in a valid x, y address in the matrix being called
+on and use a similar solution and strategy from the at function from lab 04 part one.
+
+	To implement the copy assignment operator use the header Matrix operator=(const Matrix &) {} 
+so that when calling it in the driver function you can use the syntax x = y; assuming that x and y are pre-constructed matrices.  With in the function itself retrieve the values of y and store them
+in the corresponding row/col of matrix x and return that matrix which is now stored as matrix x.
+
+	To implement the non-member arithmetic operators for scalars simply alter the previous
+operator functions parameters from lab four.  So for example when overloading the + write another
+function that swaps the parameters from (Matrix, m) to (m, Matrix).  Then within the function itself 
+simply store the values in temp variables and pass them into the old lab 04 + overloading operator
+after passing in the parameters appropriately.
+
+	To implement the overloaded unary minus operator simply call it with a pre-constructed
+matrix and return a matrix that will then be stored in the original.  Within the function itself 
+call the multiplication operator overload passing in the matrix and -1 as the scalar.  This will in
+the end return a matrix with each numbers sign reverse to the opposite.

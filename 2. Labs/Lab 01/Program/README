@@ -1,0 +1,33 @@
+# Lab 01  Courtesy of Mike Cotterel from https://gist.github.com/mepcotterell/3ce865e3a151a3b49ec3
+
+Zachary Davis (811-960-668)
+
+## Instructions
+
+To clean my code (i.e., remove any compiled files), type:
+
+```
+$ make clean
+```
+
+To compile my code, type:
+
+```
+$ make
+```
+
+To run my code (after compiling it), type:
+
+```
+$ ./lab01
+```
+
+## Reflection
+
+This program ended up being vastly different then my initial brainstorm mostly becuase of one reason
+and that is that I chose to use shifts.  In my brainstorm I was able to understand the need for bitwise
+operators and other things but I was going to attempt to convert the users number back and forth from 
+binary and uses division and remainders to shift the data about.  However upon starting the code I realized
+the emense effort that would require and that with shifting I can avoid manual binary conversions all together.
+That being said the general gist of my brainstorm was still followed but simply the execution steps that were
+altered.

@@ -1,0 +1,17 @@
+Zachary Davis, James Roach, Jack Peeples, Drew Pedger
+
+Breakout Three 2015-09-09
+
+A pointer is a variable that stores a memory address location that can be packed and
+unpacked with different values.  A pointer takes up one byte or 8 bits of memory to 
+allocate enough space for input data. &<some variable name> is using the reference
+operator and will return the beginning memory address where <some variable name> is stored
+This means that when some pointer “foo” is declared you can copy the memory address
+of and int variable baz into foo by:
+
+		foo = &baz;
+
+This will store the memory address of baz into foo so if you use *foo you will unpack the
+value originally stored in baz.  The * is called the dereferencing operator and allows for
+unpacking a pointer.  To declare a pointer you need to define the type * name_variable or
+for example int *p1;

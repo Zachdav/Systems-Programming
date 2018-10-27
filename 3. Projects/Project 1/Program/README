@@ -1,0 +1,45 @@
+#####################################################################
+# Lab 06 Courtesy of Supa` Mike from 
+# https://gist.github.com/mepcotterell/3ce865e3a151a3b49ec3
+
+Zachary Davis (811-960-668)
+
+## Instructions
+
+To clean my code (i.e., remove any compiled files), type:
+
+```
+$ make clean
+```
+
+To compile my editor, type:
+
+```
+$ make
+```
+
+To run my code (after compiling it), type:
+
+```
+$ ./lab06 <with or without a filename>
+```
+
+## Reflection
+	
+	For the most part what i planned in both of my breakout 
+brainstorms were correct, minus a couple of small details.  Most of
+what i had coded for lab06 was used and was a great building block 
+for this textEditor.  That being said a lot of things had to be altered
+in my functions taken from lab06.  One good example is the printw 
+statements had to be changed to waddstr to add a char array to the
+textfield within any of the windows i created.  
+	Beyond lab06 I also needed to create functions that would
+create a nonexistant file as well as a function to write to a file.
+	As far as the TUI with ncurses was concerned i did not have 
+a great grasp of what i would need to do for this in either of my
+brainstorms.  As it turns out i decided to create a window for the 
+text above a window that bordered it as well one for the menu, title, 
+and document name.  I did not anticipate this but it made working with
+the TUI much easier.
+
+#####################################################################

@@ -1,0 +1,21 @@
+Zachary Davis 811960668, Drew Pledger, James Roach, Jack Peeples
+
+Breakout Brainstorm 10-21-15
+
+	As of right now with project 2 i have complete the chmod, cat, mkdir utilities and am
+working on the ls utility right now.
+	For the extension part of the project we now have to tackle rm, ln, penv, stat, pwd, 
+kill, and chown by Monday at 11:55 at night.
+	For the penv and pwd utilities there are great examples posted on piazza by Supa’ Mike
+that show the correct ways to construct the utilities.
+	For rm i will need to include the cstdio function to use the remove function to delete
+the file. If however that file is the directory type then its contents needs to be deleted recursively and then the directory itself needs to be deleted.
+	For ln i will need to  use a system call to create a hard link to an existing file with
+the option of a symbolic link to the file with -S 
+	For the stat utility the the output to the standard screen needs to be the same as that 
+of the GNU implementation which means calling a lot of the information in the stat struct
+	For the kill utility the specified signal is sent the the specified PID and if not signal 
+is specified then the SIGTERM signal is sent.  Also the option of -s SIGNAL needs to be handled 
+so the user can pass in a custom signal
+	For the final utility chown I need to be able to change the ownership of the file with
+respect to whether the owner or group was passed in.  

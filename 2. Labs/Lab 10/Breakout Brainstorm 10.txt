@@ -1,0 +1,31 @@
+Zachary Davis 811960668, Drew Pledger, James Roach, Jack Peeples
+
+Breakout Brainstorm 10-21-15
+
+	Since the symbol portion of the chmod lab was so much more difficult then i assumed it would have 
+been i have not had a chance to begin any of the other utilities for this project yet.  I will first spend
+a little bit more time with the chmod() utility to perfect some minor errors i am getting and move that into
+my project file.
+
+	For the make directory utility i will implement a method similar to creating a file since a 
+directory is just a special file.  I will also be using the make directory function that already exists.  I
+will also need to check if the directory the user is trying to create already exists and if so tell them and
+exit without changing anything.
+
+	For the copy utility there will be two main parts.  One being copying the file in argv[1] to the 
+file argv[2] and the other being copy the file in argv[1] to the directory argv[2].  I will also need to
+make sure that these are recursive copies and that everything in directories being copied are also being 
+copied.
+
+	For the move utility it will be a lot like the copy utility with some minor alterations.  When the 
+target file is made the source file needs to be removed recursively so that nothing is left from it and the
+target file or directory needs to be copied recursively so that everything is moved not just the parent.
+
+	For the list segments utility i will need to make sure the when the user types ls that is is as if 
+they implemented the -l option from GNU’s version.  Other than that is i just using the stat struct to learn
+the names of child files and doing a standard print with all of the files permissions and size etc.
+
+	For the catenation utility i will be using methods very similar to that from lab06 with low-level
+file io only this time there will be no use of nurses (thank god) and no need to edit.  Simply open with the
+file descriptor and then read printing out to standard output then finally closing the file.  Only error
+that you need to prepare for are opening/closing.

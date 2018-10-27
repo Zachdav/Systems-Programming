@@ -1,0 +1,74 @@
+## Lab 04 Courtesy of Mike Cotterel from https://gist.github.com/mepcotterell/3ce865e3a151a3b49ec3
+
+Zachary Davis (811-960-668)
+
+## Instructions
+
+To clean my code (i.e., remove any compiled files), type:
+
+```
+$ make clean
+```
+
+To compile the program, type:
+
+```
+$ make
+```
+
+To run the program (after compiling it), type:
+
+```
+$ ./lab04
+```
+
+## Reflection
+
+	In my original breakout last wednesday i had intended to use 2 dimentional array's to store
+the data of the matrices and use plenty of nested for loops to recover and copy the data etc.  Upon
+starting the actual code I realized that i need to use dynamically allocated memory instead of a basic
+array or vector.  In preperation for lab05 or a more comprehensive lab04 I am more prepared in understanding
+that i need to use a dynamicallty allocated array like a pointer to solve the problem.
+
+	Also working with the operator function overloading was the simpliest part of the lab and will 
+go just as I had planned in the breakout.
+
+## Reflection Part Two
+
+	The logic i had in the original breakout from when we started lab04 was more or less correct.  The way
+i tried to apply it in my brainstorm was not so correct though.  Within the code itself i needed first to you a 
+dynamically allocated bit of memory to hold the values like an array.  To avoid complictions that come with a pointer
+of pointers i just decided to use on pointer that holds all the values in one dimention.  This works the same because
+you fill the memory with the first row then the second row and so on and so for.  When it came time do some of the functions
+this 1D layout required a little more attention but for the most part it works the same and much simpler in my mind.  
+
+	For all of the functions with a matrix +-*/ a double i justed needed to make a temp pointer that will hold the result
+of the calculation.  To do the calculations themselves it was simply for loop that iterated through each value in the pointer.
+This was exactly what i had in the brainstorm but because i had not decided to do it in a one dimention format i thought i 
+would need a nest for loop which was not the case.
+
+	For all of the functions with a matrix +-* another matrix i again created a temp to hold the results and used one for
+loop to iterate through each matrix doing the calculation and storing it in the temp.  This again is the same logic as i presented
+in my brainstorm but i though i would use two dimentions and therefore need a nested for loop but i didnt in reality.
+
+	My logic for transpose was fairly simple and correct in my brainstorm.  You need a nested for loop that will iterate
+through each of the values storing them in its new transposed location.  This i did need a nested for loop even though i only 
+used one dimention so i was completely correct in my brainstorm
+
+	The overloaded operators were fairly simple and exactly as i predicted in my brainstorm.  You simlpy add the functions to
+the headerfile making them members and with in each function call the appropriate +-*/ function.  For the = operator overload obviously
+you need to call the copy constructor.
+
+	For ostream i simply made a string variable and concatinated the numbers in the matrix with a bunch of formatting to create a 
+visual representation of a two-dimentional matrix to the screen.  The only thing i was unclear on in the brainstorm is that the return 
+statment literally outputs directly to a stream i.e. uses << in the return statment.
+
+	For the the reversed matrix operations with operator overloads i was almost correct in my brainstorm.  For + and * i can simply 
+create and operator overload with the new paramaters and inside call the reversed the operator overload reversing the parameters.  For - and
+/ however because of math i needed to re-write part of the function from both to account for error.  This was the part i was unable to predicte
+in the brainstorm.
+
+	Lastly the uniary minus operator i was almost correct.  You need to make sure in the header of the overload has no parameters to 
+differentiate it from the original - overload.  Then with in the function itself simply call the mulitply function to multiply all the values
+by -1.  This will not change the values in the calling matrix except that all positives are now negatives and negatives now positives.  This 
+is what i was able to plan for in the brainstorm.

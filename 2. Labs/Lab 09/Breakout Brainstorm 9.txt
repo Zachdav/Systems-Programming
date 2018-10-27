@@ -1,0 +1,31 @@
+Zachary Davis 811960668, Drew Pledger, James Roach, Jack Peeples
+
+Breakout Brainstorm 10-21-15
+
+	What we know about chmod: It is a linux utility that takes in two arguments the first of which
+is the file path of the file being worked with and the second argument is the octal or symbolic 
+representation of the permissions you want to change it to.
+
+	For this breakout we will need to first handle issues pertaining to the arguments, in both 
+quantity and type.  For example my program will only accept two arguments no more and no less so if
+the number of args is not two this needs to be handled.  Also what the arguments are will always be
+the same.  So the first must always be the file that is being worked with and the second must be the
+octal or symbolic representation of its permissions.
+
+	The other errors that will need to be handled are:
+		the program caller does not have permissions to alter the permissions
+		the file in question does not exist/or something in the file path does not exist
+		the arguments are in the correct format such as octal
+
+	Once the program is being called and all inputs are finally valid the program should proceed
+in one of two ways determined by an if statement.  If the second argument has a leading 0 then it is 
+representing permissions in octal and i can proceed with the chmod function.  Else the argument
+is using symbolic representation and they need to be altered to either the correct symbols or octal
+which can then be passes in chmod function.
+
+	Finally there needs to be a formatted output to the user if all permission mode changes were
+successful and the program should exit on success.  If the change in mode failed the user needs to be 
+altered to this and as with all errors the program needs to be exited on failure.
+
+	What i expect to learn from this lab are the basic ins and outs of the chmod, fchmod, and
+fchmodat functions and gain a better understanding for error handling and file permissions.

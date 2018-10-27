@@ -1,0 +1,69 @@
+#####################################################################
+# Project 2 
+# Courtesy of Supa` Mike from https://gist.github.com/mepcotterell/3ce865e3a151a3b49ec3
+
+Zachary Davis (811-960-668)
+
+## Instructions
+
+To clean my code (i.e., remove any compiled files), type:
+
+```
+$ make clean
+```
+
+To compile my editor, type:
+
+```
+$ make
+```
+
+To run my code (after compiling it), type:
+
+```
+$ ./utiltiy_name <with appropriate parameters>
+```
+
+## Reflection
+
+        For this project i was able to grasp a relatively good under-
+standing of all the utilities on a highier level but when assuming
+no correct input and all the errors that can be thrown in tandem with
+all of the little details i over looked in my breakout this project
+turned into quite a bit of work.
+	For the kill utility the hardest part was mapping the signals 
+to there correct integer value, but i was able to come up with clever
+way to do that i never discussed in my breakout because i was unaware
+that that would even become a problem.
+	Thanks to Supa' Mike i was able to review and study the penv
+and pwd utilities for how to aproach some of the other utilities.
+	The stat utility was not really a surprise at all from when 
+i wrote my breakout it was just a bunch of symantic formatting of all
+the data in the stat struct
+	The ln utility was actually much simpler then i precieved it 
+to be at the time of the breakout.  I had known about the link 
+function but assumed i would have to manipulate that function for the
+-S option not realizing there already was a symlink function
+	The remove function was one of the ones that caught me for some
+time.  The traditional rm was very easy with the unlink function but 
+the -R option made things a bit tougher.  Requiring me to search through
+the directory clear it and then remove it.
+	The cat utility was increadbly easy and most of my source code
+i pulled from my own lab 06 modifying the directed output to the stand-
+ard output. The only thing that i was not prepared for was what GNU's
+version does when no argument file is included which is to mirror user 
+input.
+	I worked much much more on the chmod from lab 09 but by this
+point Supa's MIke went over it so much that i was well aware of how
+to implement it.
+	The ls utility was a glorified version of the stat utility
+and i fully understood how to implement it when writing my breakout.
+The only shacky part was modding the uid and gid as well as the time.
+	The mv and cp functions are very closely related and we fairly
+simple.  I was able to implement them just as i planned in my breakout
+other then the -R option of cp which has bested me
+	The Mkdir utility was no surprise from the breakout given that
+the system call does most of the work for you.  The only difficult part
+was supporting the -p option which has also bested me although i left 
+my algorithm because i think i was very close.
+#####################################################################

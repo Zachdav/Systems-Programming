@@ -1,0 +1,12 @@
+Zachary Davis 811960668
+
+Breakout Brainstorm 10-14-15
+
+	I have started the project by using the lab06 code as the base for the low-level file
+I/O.  That code has the open, read, and close functions pretty much already defined.  Which means
+that I needed to implement a create function to create a file when the user in the text editor
+tries to save their txt.  If they try to open a file that does not exist than that file will be
+created and opened for the user.  I have begun to start the “UI” of the project by making the
+window and dealing with the addition of chars or moving the cursor around.  I have also dealt with
+the backspace key.  I have a majority of the UI type stuff to finish.  That is all i will continue
+to try and earn my A for effort.

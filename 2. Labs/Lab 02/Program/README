@@ -1,0 +1,59 @@
+## Lab 02  Courtesy of Mike Cotterel from https://gist.github.com/mepcotterell/3ce865e3a151a3b49ec3
+
+Zachary Davis (811-960-668)
+
+## Instructions
+
+To clean my code (i.e., remove any compiled files), type:
+
+```
+$ make clean
+```
+
+To compile all five programs, type:
+
+```
+$ make
+```
+
+To compile a specific program, type:
+
+```
+$ make <fileName>  //(for example to compile stat.cpp only type: $make stat)
+```
+
+To run my one of the programs (after compiling it), type:
+
+```
+$ ./<fileName>  //(for example to run stat after compilation type: $./stat)
+```
+
+## Reflection
+
+	In the stat program brainstorm I planned on asking the user how many
+integers they planned on entering but realized that it would be much simpler to
+employee stringstreams to allow them to enter as many as they please without 
+wasting another whole variable.  Also in my brainstorm i decide not to use an 
+array and just add the integer and squared integer to a variable and I actually
+did that in the program
+
+	In the minmax program brainstorm I planned on asking the user how many
+integers they planned on entering but after what I had learned writing stat I
+decided to use stringstream again to simplify the program and save memory.  
+Otherwise my plan in the brainstorm was exactly what I did.
+
+	In the degrees program brainstorm I planned on reading in the users value
+evaluating it to a formula using setprecision to limit the number of decimal places
+and finally showing the user and for the first time I did exactly what I brainstormed.
+
+	In the time program brainstorm I planned on retrieving the users input and using
+a series of mudulo's and divisions to segment the time into hours/minutes/seconds and again
+that is exactly what I ended up doing.
+
+	In the endtime program brainstorm I planned on retrieving the users input and 
+duration and like in time use modulo and division to convert minutes to hours and hours
+to minutes.  This is exactly how I wrote the program.
+
+	As a whole in my brainstorm when I was able to tackle thr problem correctly 
+I was able produce a working bit of code much faster and efficiently and when my brainstorm
+had errors I was able to correct them and see where I went wrong for future programs.

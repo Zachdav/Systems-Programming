@@ -1,0 +1,14 @@
+Zachary Davis 811-960-668, Jack Peeples, James Roach, Drew Pledger
+
+Breakout Brainstorm 11-18-15
+
+	For this lab we are building off of the previous lab adding the utility
+for cd, exit, and help.  Also I will need to adjust the current prompt of my
+lab so that instead of printing the whole absolute path we replace the "home"
+directory with the "~".
+	We will need to make sure that the shell program redirect the six possible 
+signals listed in that lab description.  That being said the child process needs
+to accept the same six signals and uses their default disposition.
+	And the majority of this lab will be spent making simple foreground processes
+by forking having the child process complete the job while the parent uses waitpid
+to wait for the child process to complete.
